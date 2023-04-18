@@ -27,7 +27,10 @@ export default class Modal{
     this.newPic = document.createElement('img');
     this.newPic.setAttribute('src', this.props.source);
 
-      this.newModalContent.append(this.newId, this.newCloseButton, this.newPic, this.newAbout);
+    this.newVid = document.createElement('video');
+    this.newVid.setAttribute('src', this.props.video);
+
+      this.newModalContent.append(this.newId, this.newCloseButton, this.newPic, this.newVid, this.newAbout);
 
       this.newModal.appendChild(this.newModalContent);
 
