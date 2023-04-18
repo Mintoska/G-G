@@ -24,13 +24,21 @@ export default class Modal{
     this.newAboutText = document.createTextNode(`About: ${this.props.about}`);
     this.newAbout.appendChild(this.newAboutText);
 
-    this.newPic = document.createElement('img');
-    this.newPic.setAttribute('src', this.props.source);
+    this.newElement=null;
+    if(this.props.video){
+      this.newElement=document.createElement('video');
+      this.newElement.autoplay=true;
+      this.newElement.controls=true;
+      this.newElement.loop=true;
+    }else{
+      this.newElement = document.createElement('img');
+    }
+    this.newElement.setAttribute('src', this.props.source);
+    this.newElement.classList.add('media');
 
-    this.newVid = document.createElement('video');
-    this.newVid.setAttribute('src', this.props.video);
+    
 
-      this.newModalContent.append(this.newId, this.newCloseButton, this.newPic, this.newVid, this.newAbout);
+      this.newModalContent.append(this.newId, this.newCloseButton, this.newElement, this.newAbout);
 
       this.newModal.appendChild(this.newModalContent);
 
