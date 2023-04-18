@@ -176,4 +176,25 @@ border-radius: 3px 0 0 3px;
 h1{
   margin-bottom: 20px;
 }
+.modalContent{
+  height: 100vh;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  background-color: rgb(30, 33, 37);
+  padding: 20px;
 
+  }
+  .modalContent img{
+    width: 100%;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+  }
+  .modalContent button{
+    border: none;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
