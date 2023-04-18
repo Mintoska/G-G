@@ -2,31 +2,78 @@
 
 body{
   background-image: url(./task/resources/bg.jpg);
+ 
   font-family: roboto;
+}
+  #pirmas{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}  
+/* #frontas{
+  display: flex;
+} */
+#linesT{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#linesT :first-child{
+  width: 250px;
+  border: 1px solid white;
+  border-left: none;
+  border-top: none;
+}  
+#linesT :last-child{
+  width: 250px;
+  border: 1px solid white;
+  border-right: none;
+  border-top: none;
 }
 h1{
   color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-align: center;
 }
 p{
   color: white;
   font-weight: 200;
-  font-size: 0.75rem;
+  font-size: 0.55rem;
   line-height: 1.5rem;
+  word-spacing: 4px;
+  letter-spacing: 1px;
 }
 a {
   text-decoration: none;
   color: white;
   border-bottom: 1px dotted #ffffff; 
 }
-
-
-
+#linesB{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#linesB :first-child{
+  width: 250px;
+  border: 1px solid white;
+  border-left: none;
+}  
+#linesB :last-child{
+  width: 250px;
+  border: 1px solid white;
+  border-right: none;
+}
 
 #mygt{
   display: flex;
   flex-direction: column;
 
 }
+
 button{
 color: white;
 font-size: 0.5rem;
