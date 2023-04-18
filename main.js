@@ -1,17 +1,18 @@
-import Modal from './data.json';
+import Modal from './Tabai.js';
 
 const openTabBtn = document.querySelector('#open');
 const tabs = document.querySelector('#tabas');
 
 
 
-fetch('../scripts/data.json')
-  .then(response => response.json())
+fetch('./data.json')
+  .then(res => res.json())
   .then(data => {
     data.tabai.forEach(jKort => {
       const num = jKort.id;
       const apie = jKort.about;
       const fotke = jKort.source;
+      console.log(jKort);
 
       open.addEventListener('click', () => {
       document.body.append(new Modal(jKort));
