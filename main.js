@@ -12,25 +12,17 @@ introMygt.addEventListener('click', () => {
 workMygt.addEventListener('click', () => {
   veiksmas(1);
 });
-
-
-fetch('./data.json')
-  .then(res => res.json())
-  .then(data => {
-    data.tabai.forEach(jKort => {
-      const num = jKort.id;
-      const apie = jKort.about;
-      const fotke = jKort.source;
-      console.log(jKort);
-=======
 aboutMygt.addEventListener('click', () => {
   veiksmas(2);
 });
-
-
 contactMygt.addEventListener('click', () => {
   veiksmas(3);
 });
+
+
+  
+
+
 
 function veiksmas(index) {
   fetch('./data.json')
@@ -44,6 +36,17 @@ function veiksmas(index) {
       document.body.appendChild(langas);
     });
 }
+
+
+// fetch('./data.json')
+//   .then(res => res.json())
+//   .then(data => {
+//     data.tabai.forEach(jKort => {
+//       const num = jKort.id;
+//       const apie = jKort.about;
+//       const fotke = jKort.source;
+//       console.log(jKort);
+
 
 // const openTabMygt = document.querySelector('#open');
 // const tabs = document.querySelector('#tabas');
