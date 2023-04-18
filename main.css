@@ -146,6 +146,49 @@ border-radius: 3px 0 0 3px;
 #mygt :last-child{
   border-radius: 0 3px 3px 0;
 }
+.modalContent{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 10px;
+  background-color: rgb(30, 33, 37);
+  padding: 0 20px;
+}
+.modalContent .closeModal{
+  position: absolute;
+  top: 5px;
+  color: #ffffff;
+  right: 20px;
+  border: none;
+  font-size: 2rem;
+  font-weight: 500;
+  transform: rotateZ(0deg);
+}
+.modalContent .media{
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+  border-radius: 0;
+}
+
+.modalContent .closeModal:hover{
+  transform: rotateZ(90deg);
+  transition-duration: 1s;
+}
+.modalContent h2{
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 2px;
+ width: 100%;
+ color: white;
+ text-decoration: underline;
+ text-underline-offset: 10px;
+ text-align: left;
+ margin-top: 10px;
+}
+
 @media (min-width: 600px) {
   body{
     background-size: auto;
@@ -174,10 +217,8 @@ border-radius: 3px 0 0 3px;
 
 #frontas{
   top: 24%;
-}}
-h1{
-  margin-bottom: 20px;
 }
+
 .modalContent{
   /* height: 100vh;
   width: 80%; */
@@ -185,37 +226,10 @@ h1{
   top: 20px;
   left: 80px;
   right: 80px;
-  /* bottom: 20px; */
+  bottom: 10px;
   background-color: rgb(30, 33, 37);
   padding: 0 20px;
 
   }
-  .modalContent .media{
-    width: 100%;
-    border: none;
-    padding: 0;
-    border-radius: 0;
-  }
-  .modalContent .closeModal{
-    position: absolute;
-    top: 5px;
-    color: #ffffff;
-    right: 5px;
-    border: none;
-    font-size: 2rem;
-    font-weight: 500;
-    transform: rotateZ(0deg);
-  }
-  .modalContent .closeModal:hover{
-    transform: rotateZ(90deg);
-    transition-duration: 1s;
-  }
-  .modalContent h2{
-    position: relative;
-   width: 100%;
-   color: white;
-   text-decoration: underline;
-   text-underline-offset: 10px;
-   text-align: left;
-   margin-top: 10px;
-  }
+  
+}
