@@ -1,24 +1,24 @@
 {
 	"tabai": [
     {
-			"id": 1,
-			"about": "Lorem ipsum dolor fugit delectus.",
-			"source": "url"
+			"id": "INTRO",
+			"about": "When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology.",
+			"source": "/task/resources/tab-1.mpeg4"
 		},
     {
-			"id": 2,
-			"about": "Lorem ipsum dolor fugit delectus.",
-			"source": "url"
+			"id": "WORK",
+			"about": "Virtual reality lets you explore new worlds and shared experiences. Even if you’re far apart, you can discover new experiences with friends and family together.",
+			"source": "/task/resources/tab-2.jpg"
 		},
     {
-			"id": 3,
-			"about": "Lorem ipsum dolor fugit delectus.",
-			"source": "url"
+			"id": "ABOUT",
+			"about": "See how personalized ads on Facebook and Instagram connects you with small businesses in a new virtual experience with The Atlantic that generates a Personal Main Street tailored specifically for you.",
+			"source": "/task/resources/tab-3.jpg"
 		},
     {
-			"id": 4,
-			"about": "Lorem ipsum dolor fugit delectus.",
-			"source": "url"
+			"id": "CONTACT",
+			"about": "A subscription bundle to help you establish your presence on Instagram and Facebook. Click below to subscribe to Instagram or Facebook.",
+			"source": "/task/resources/tab-4.jpg"
 		}
   ]
 }
