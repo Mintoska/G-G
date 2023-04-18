@@ -10,13 +10,13 @@ export default class Modal{
     this.newModalContent = document.createElement('div');
     this.newModalContent.classList.add('modalContent');
 
-    this.newCloseButton = document.createElement('button');
+    this.newCloseButton = document.createElement('div');
     this.closeModal();
     this.newCloseButton.classList.add('closeModal');
     this.newCloseButtonText = document.createTextNode('x');
     this.newCloseButton.appendChild(this.newCloseButtonText);
 
-    this.newId = document.createElement('h1');
+    this.newId = document.createElement('h2');
     this.newIdText = document.createTextNode(`${this.props.id}`);
     this.newId.appendChild(this.newIdText);
 
@@ -27,7 +27,7 @@ export default class Modal{
     this.newPic = document.createElement('img');
     this.newPic.setAttribute('src', this.props.source);
 
-      this.newModalContent.append(this.newId, this.newCloseButton, this.newPic, this.newabout);
+      this.newModalContent.append(this.newId, this.newCloseButton, this.newPic, this.newAbout);
 
       this.newModal.appendChild(this.newModalContent);
 
