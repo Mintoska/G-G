@@ -2,7 +2,10 @@
 
 body{
   background-image: url(./task/resources/bg.jpg);
- 
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* object-fit: cover; */
   font-family: roboto;
 }
   #pirmas{
@@ -61,11 +64,13 @@ a {
   width: 250px;
   border: 1px solid white;
   border-left: none;
+  border-bottom: none;
 }  
 #linesB :last-child{
   width: 250px;
   border: 1px solid white;
   border-right: none;
+  border-bottom: none;
 }
 
 #mygt{
@@ -87,4 +92,25 @@ border-radius: 3px 0 0 3px;
 }
 #mygt :last-child{
   border-radius: 0 3px 3px 0;
+}
+@media (min-width: 600px) {
+  body{
+    background-size: auto;
+    background-repeat: no-repeat;
   }
+  p{
+    text-align: center;
+  }
+  #mygt{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+  }
+#linesB, #linesT{
+  justify-content: center;
+  
+}
+  button{
+    width: 100px;
+  }
+}
