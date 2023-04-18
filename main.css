@@ -1,73 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
 body{
-  background-image: url(./task/resources/bg.jpg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* object-fit: cover; */
   font-family: roboto;
 }
   #pirmas{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-}  
-/* #frontas{
+  width: auto;
+  height: 100vh;
+  background-image: url(./task/resources/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+} 
+.background-overlay {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./task/resources/bg-overlay.png);
+  background-color: black;
+  opacity: 0.5;
+  
+}
+#frontas{
   display: flex;
-} */
+  flex-direction: column;
+}
+img{
+  width: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  align-self: center;
+} 
+
 #linesT{
   display: flex;
   margin: 0;
   padding: 0;
   width: 100%;
+  justify-content: center;
+}
+#linesT :hover{
+  background-color: rgba(0, 0, 0, 0);
 }
 #linesT :first-child{
-  width: 250px;
+  width: 45vw;
   border: 1px solid white;
   border-left: none;
   border-top: none;
 }  
 #linesT :last-child{
-  width: 250px;
+  width: 45vw;
   border: 1px solid white;
   border-right: none;
   border-top: none;
 }
 h1{
   color: white;
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   letter-spacing: 3px;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 p{
+  margin-top: 10px;
   color: white;
   font-weight: 200;
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   line-height: 1.5rem;
   word-spacing: 4px;
   letter-spacing: 1px;
+  align-items: start;
+  padding: 0 20px;
 }
 a {
   text-decoration: none;
   color: white;
   border-bottom: 1px dotted #ffffff; 
 }
+  a:hover {
+    cursor: pointer;
+    color: rgb(176, 176, 235);
+  }
+
 #linesB{
   display: flex;
   margin: 0;
   padding: 0;
   width: 100%;
 }
+#linesB :hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
 #linesB :first-child{
-  width: 250px;
+  width: 45vw;
   border: 1px solid white;
   border-left: none;
   border-bottom: none;
 }  
 #linesB :last-child{
-  width: 250px;
+  width: 45vw;
   border: 1px solid white;
   border-right: none;
   border-bottom: none;
@@ -76,6 +113,16 @@ a {
 #mygt{
   display: flex;
   flex-direction: column;
+}
+#blokasA{
+  position: absolute;
+  top: 60%;
+  align-self: center;
+}
+#frontas{
+  position: absolute;
+  top: 15%;
+  align-self: center;
 
 }
 
@@ -86,6 +133,10 @@ font-weight:100;
 border: 1px solid white;
 background-color: rgba(255, 255, 255, 0);
 height: 30px;
+}
+button:hover {
+  background-color: grey;
+  cursor: pointer;
 }
 #mygt :first-child{
 border-radius: 3px 0 0 3px;
@@ -100,6 +151,7 @@ border-radius: 3px 0 0 3px;
   }
   p{
     text-align: center;
+    line-height: 0;
   }
   #mygt{
     display: flex;
@@ -108,9 +160,19 @@ border-radius: 3px 0 0 3px;
   }
 #linesB, #linesT{
   justify-content: center;
-  
 }
+
   button{
     width: 100px;
   }
+
+#blokasA{
+  top: 65%;
+}
+
+#frontas{
+  top: 24%;
+}}
+h1{
+  margin-bottom: 20px;
 }
